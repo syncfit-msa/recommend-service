@@ -3,7 +3,6 @@ package com.amcamp.domain.spotify.application;
 import com.amcamp.domain.spotify.dto.response.SpotifySearchResponse;
 import com.amcamp.global.error.exception.CustomException;
 import com.amcamp.global.error.exception.ErrorCode;
-import com.amcamp.global.util.MemberUtil;
 import com.amcamp.infra.config.spotify.SpotifyConfig;
 import lombok.RequiredArgsConstructor;
 import org.apache.hc.core5.http.ParseException;
@@ -28,10 +27,10 @@ import static com.neovisionaries.i18n.CountryCode.KR;
 public class SpotifyService {
 
     private final SpotifyConfig spotifyConfig;
-    private final MemberUtil memberUtil;
+//    private final MemberUtil memberUtil;
 
     public List<SpotifySearchResponse> searchByGenre(List<String> genres) {
-        memberUtil.getCurrentMember();
+//        memberUtil.getCurrentMember();
 
         Track[] tracks = getTrackInfoByGenre(genres);
 
