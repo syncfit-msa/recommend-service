@@ -1,12 +1,14 @@
 package com.amcamp.domain.chat.dto.response;
 
+import com.amcamp.domain.spotify.dto.response.SpotifySearchResponse;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Getter
-@NoArgsConstructor
 @AllArgsConstructor
 public class GenreRecommendationResponse {
-    private String genre;
+    private List<SpotifySearchResponse> tracks;  // 추천된 음악 목록
 }
