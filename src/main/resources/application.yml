@@ -1,12 +1,16 @@
 spring:
+  config:
+    import: optional:configserver:http://${CONFIG_HOST:127.0.0.1}:${CONFIG_PORT:8888}/
+  cloud:
+    config:
+      name: recommendation-service
+  application:
+    name: recommendation-service
   profiles:
-    active: "local"
-    group:
-      local: "local"
-      dev: "dev"
+    active: local
     include:
       - datasource
       - security
       - redis
-      - firebase
       - api
+      - internal

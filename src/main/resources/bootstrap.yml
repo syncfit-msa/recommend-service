@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: recommendation-service
+  cloud:
+    config:
+      uri: http://${SRV_CONFIG_HOST:127.0.0.1}:${SRV_CONFIG_PORT:8888}
+  rabbitmq:
+    host: ${RABBITMQ_HOST:localhost}
+    port: ${RABBITMQ_PORT:5672}
+    username: ${RABBITMQ_USERNAME:guest}
+    password: ${RABBITMQ_PASSWORD:guest}

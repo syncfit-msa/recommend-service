@@ -29,5 +29,4 @@ public class ChatController {
         // 2. GenreRecommendationResponse에 추천된 음악 목록을 담아 반환
         return new GenreRecommendationResponse(recommendedTracks);
     }
-
 }

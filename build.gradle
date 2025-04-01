@@ -69,6 +69,15 @@ dependencies {
     // Firebase
     implementation 'com.google.firebase:firebase-admin:9.2.0'
     implementation 'com.google.protobuf:protobuf-java:3.21.12'
+
+    // Config 서버
+    implementation 'org.springframework.cloud:spring-cloud-starter-config'
+// Bootstrap 설정 지원
+    implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
+// 설정 변경 감지를 위한 RabbitMQ 통합
+    implementation 'org.springframework.cloud:spring-cloud-starter-bus-amqp'
+// Eureka 클라이언트
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
 }
 
 tasks.named('test') {
