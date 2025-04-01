@@ -50,9 +50,6 @@ dependencies {
     implementation 'io.micrometer:micrometer-registry-prometheus'
     implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
 
-    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
-    implementation platform('org.springframework.cloud:spring-cloud-dependencies:2024.0.0')
-
 }
 
 tasks.named('test') {
