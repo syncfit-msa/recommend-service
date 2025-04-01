@@ -7,7 +7,7 @@ spring:
   application:
     name: recommendation-service
   profiles:
-    active: local
+    active: prod
     include:
       - redis
       - security
