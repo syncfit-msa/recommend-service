@@ -5,6 +5,7 @@ import com.amcamp.global.error.exception.CustomException;
 import com.amcamp.global.error.exception.ErrorCode;
 import com.amcamp.infra.config.spotify.SpotifyConfig;
 import lombok.RequiredArgsConstructor;
+import lombok.Value;
 import org.apache.hc.core5.http.ParseException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -25,6 +26,8 @@ import static com.neovisionaries.i18n.CountryCode.KR;
 @Service
 @RequiredArgsConstructor
 public class SpotifyService {
+
+    private String apiKey;
 
     private final SpotifyConfig spotifyConfig;
 //    private final MemberUtil memberUtil;

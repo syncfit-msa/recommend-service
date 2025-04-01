@@ -17,7 +17,7 @@ public class ChatConfig {
     @Bean
     public RestClient chatRestClient() {
         return RestClient.builder()
-                .baseUrl(chatProperties.geminiBaseurl())
+                .baseUrl(chatProperties.baseurl())
                 .defaultHeader("x-goog-api-key", chatProperties.apiKey())
                 .defaultHeader("Content-Type", "application/json")
                 .defaultHeader("Accept", "application/json")
