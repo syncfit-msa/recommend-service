@@ -43,3 +43,7 @@
   - `SpotifyController.java`: Spotify 관련 API를 제공하는 컨트롤러
   - `SpotifyService.java`: Spotify API와 통신하는 서비스
   - `dto/response`: Spotify 검색 결과 데이터를 담는 DTO
+
+### 📂 `주요 변경 사항`
+![image](https://github.com/user-attachments/assets/307a6135-6d92-4e82-95d9-0544ba89be50)
+
